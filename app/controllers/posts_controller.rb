@@ -4,6 +4,7 @@ class PostsController < ApplicationController
     
     def index
         @posts = Post.all
+        
     end
     
 
@@ -19,6 +20,10 @@ class PostsController < ApplicationController
       render :new
       end
     end 
+
+    def show
+        @posts = Post.all
+    end
     
 
     # private
