@@ -13,7 +13,6 @@ class PostsController < ApplicationController
     @post = current_user.posts.new(post_params)
     if @post.save
       redirect_to root_path
-      debugger
     else
       render :new
     end
@@ -22,6 +21,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body ,:id)
+    params.require(:post).permit(:title, :body, :id)
   end
 end
