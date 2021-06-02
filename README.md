@@ -45,7 +45,7 @@ $ git checkout <branch name>
 
 - GitHub: [@githubhandle](https://github.com/tanzila-abedin)
 - Twitter: [@twitterhandle](https://twitter.com/TanzilaAbedin)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanzila-abedin-331440b2/)
+- LinkedIn: [Profile](https://www.linkedin.com/in/tanzila-abedin-331440b2/)
 
 👤 **Omar R.**
 
