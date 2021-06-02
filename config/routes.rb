@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  get 'posts/new'
+  get 'posts/create'
+  get 'posts/index'
+  post 'posts/new', to: 'posts#create'
+
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-
-  resources :posts
-  get 'posts/new'
-  post 'posts/new' 
-  root to: "posts#index"
+  root to: 'posts#index'
+  resources :posts, only: [:new, :create, :index, :show] 
 end

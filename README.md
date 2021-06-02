@@ -49,7 +49,6 @@ $ git checkout <branch name>
 
 👤 **Omar R.**
 
-![Omar's GitHub stats](https://github-readme-stats.vercel.app/api?username=od-c0d3r/&count_private=true&theme=dark&show_icons=true)
 
 - GitHub: [@od-c0d3r](https://github.com/od-c0d3r)
 - Twitter: [@od-coder](https://twitter.com/od_coder)
