@@ -1,0 +1,28 @@
+<h1>List of</h1>
+
+<div>
+    <% if @posts.empty? %>
+    <p>No posts currently available</p>
+    <% end %>
+</div>
+<div>
+    <ul>
+        <%@posts.each do |post| %>
+        <% user = User.find(post.user_id)%>
+        <%user_name = user.name%>
+        <% if signed_in? %>
+            <span>Author:</span>
+            <%= user_name %>
+        <% end %>
+            <span>Content:</span>
+            <%= post.body %> <br>
+        <% end %>
+    </ul>
+</div>
+
+<% if !user_signed_in? %>
+<%= link_to "Login", new_user_session_path %> or you can <%= link_to "Sign up", new_user_registration_path %>
+<%else%>
+<%= link_to "Create Post", new_post_path %> <br>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<%end%>
