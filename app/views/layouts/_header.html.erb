@@ -1,0 +1,13 @@
+ <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "Members Only", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '/' %></li> 
+             <%if !signed_in?%> 
+                    <li><%= link_to "Log in", '#' %></li>
+              <%end%>
+          </ul>
+        </nav>
+      </div>
+</header>
